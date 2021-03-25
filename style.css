@@ -1,8 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  color: blue;
 }
 
 .colorise{
   color: red;
+}
+
+.ccolor{
+  display: block;
+}
+.nav-item-inner{
+  display: block;
+  transition: 3s;
 }
