@@ -4,6 +4,16 @@ body {
   color: blue;
 }
 
+img{
+  max-height: 300px;
+  object-fit: cover;
+}
+
+
+.slick-arrow {
+  color: black;
+}
+
 .colorise{
   color: red;
 }
@@ -12,6 +22,19 @@ body {
   display: block;
 }
 .nav-item-inner{
+  border-radius: 10px;
+  padding: 5px;
+  background: rgb(46, 46, 50);
   display: block;
   transition: 3s;
+  list-style-type: none;
+}
+
+.nav-item-inner > a{
+  text-decoration: none;
+  color: white
+}
+
+.nav-item-inner > a:hover{
+  color: rgb(220, 220, 220);
 }
