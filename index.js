@@ -1,7 +1,22 @@
 $('.nav-item-inner').hide()
 $('nav > a > img').hide()
 
+//using nanoscroller
+$(".nano").nanoScroller();
+
+//using pickdate
+let m = $('#inputDatetime').pickadate({
+    format: 'dd-mm-yyyy',
+    formatSubmit: 'dd-mm-yyyy',
+  });
+let picker = m.pickadate('picker')
+
+
+$('#btndate').on('click', function(e){
+  $('.showDate').text(picker.get())
+})
 //using slick
+
 $('.slider').slick({
       infinite: true,
       dots: true,
@@ -12,7 +27,9 @@ $('.slider').slick({
       autoplay: true,
       autoplaySpeed: 2000
 });
+
 //using avgrund
+
 $('#showModal').avgrund({
   width: 380, // max is 640px
   height: 280, // max is 350px
